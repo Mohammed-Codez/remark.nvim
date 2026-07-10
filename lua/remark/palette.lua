@@ -39,8 +39,7 @@ local variants = {
 local M = {}
 
 function M.get(variant)
-	variant = variant or "dark"
-	return variants[variant]
+	return variants[variant or "dark"]
 end
 
 return M
