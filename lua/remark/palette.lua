@@ -25,7 +25,7 @@ local variants = {
 		white = palette.white,
 	},
 	["faux-dark"] = {
-		black = palette.black,
+		black = palette.bblack,
 		gray1 = palette.bgray1,
 		gray2 = palette.bgray2,
 		gray3 = palette.bgray3,
