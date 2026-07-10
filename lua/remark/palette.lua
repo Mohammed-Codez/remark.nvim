@@ -1,8 +1,8 @@
 local palette = {
-	bgray3 = "#6c7074",
-	bgray2 = "#4c5458",
-	bgray1 = "#30343c",
-	bblack = "#101820",
+	bgray3 = "#6c6c74",
+	bgray2 = "#4c5058",
+	bgray1 = "#30303c",
+	bblack = "#101420",
 	black = "#202020",
 	gray1 = "#3c3c3c",
 	gray2 = "#585858",
@@ -39,7 +39,8 @@ local variants = {
 local M = {}
 
 function M.get(variant)
-	return variants[variant or "faux_dark"]
+	variant = variant or "faux_dark"
+	return variants[variant]
 end
 
 return M
