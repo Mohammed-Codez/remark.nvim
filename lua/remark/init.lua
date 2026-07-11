@@ -17,6 +17,7 @@ function M.setup(user_config)
 		vim.cmd("syntax reset")
 	end
 
+	vim.g.colors_name = "remark-" .. M.config.style
 	highlights.set(palette.get(M.config.style))
 end
 
