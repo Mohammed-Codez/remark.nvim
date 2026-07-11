@@ -3,7 +3,9 @@ local M = {}
 local palette = require("remark.palette")
 local highlights = require("remark.highlights")
 
-M.config = {}
+M.config = {
+	style = "dark",
+}
 
 function M.setup(user_config)
 	user_config = user_config or {}
@@ -15,7 +17,7 @@ function M.setup(user_config)
 		vim.cmd("syntax reset")
 	end
 
-	highlights.set(palette.get())
+	highlights.set(palette.get(M.config.style))
 end
 
 return M
