@@ -24,7 +24,7 @@ local variants = {
 		gray6 = palette.gray6,
 		white = palette.white,
 	},
-	faux_dark = {
+	["faux-dark"] = {
 		black = palette.bblack,
 		gray1 = palette.bgray1,
 		gray2 = palette.bgray2,
@@ -39,7 +39,7 @@ local variants = {
 local M = {}
 
 function M.get(variant)
-	variant = variant or "faux_dark"
+	variant = variant or "dark"
 	return variants[variant]
 end
 

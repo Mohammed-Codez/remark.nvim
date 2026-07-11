@@ -1,2 +1,2 @@
 vim.g.colors_name = "remark-dark"
-require("remark").setup()
+require("remark").setup("dark")
