@@ -4,7 +4,7 @@ local palette = require("remark.palette")
 local highlights = require("remark.highlights")
 
 function M.setup(user_config)
-	user_config = user_config or {}
+	user_config = user_config or "dark"
 	M.config = vim.tbl_deep_extend("force", M.config, user_config)
 
 	vim.cmd("hi clear")
