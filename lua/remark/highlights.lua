@@ -34,7 +34,10 @@ function M.set(palette)
 		Whitespace = { fg = palette.gray4 },
 
 		Comment = { link = "Whitespace" },
-		String = "",
+		String = {},
+		Identifier = { fg = palette.fg },
+		Function = { fg = palette.gray6 },
+		Statement = { fg = palette.lblue },
 	}
 
 	for group, highlight in pairs(groups) do
