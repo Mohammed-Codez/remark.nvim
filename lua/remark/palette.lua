@@ -11,14 +11,14 @@ local palette = {
 	gray5 = "#acacac",
 	gray6 = "#c8c8c8",
 	white = "#e4e4e4",
-	red = "#ac5858",
-	lred = "#e47474",
-	green = "#74ac74",
-	lgreen = "#90c890",
+	red = "#ac7070",
+	lred = "#d08080",
+	green = "#809070",
+	lgreen = "#98b090",
 	yellow = "#c8ac58",
 	lyellow = "#e4c874",
-	blue = "#5874ac",
-	lblue = "#7490c8",
+	blue = "#6880a0",
+	lblue = "#7490c0",
 }
 
 local variants = {

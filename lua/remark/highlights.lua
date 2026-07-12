@@ -32,6 +32,9 @@ function M.set(palette)
 		StatusLineTerm = { link = "StatusLine" },
 		Visual = { bg = palette.gray2 },
 		Whitespace = { fg = palette.gray4 },
+
+		Comment = { link = "Whitespace" },
+		String = "",
 	}
 
 	for group, highlight in pairs(groups) do
