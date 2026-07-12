@@ -21,6 +21,8 @@ function M.set(palette)
 	}
 
 	for group, highlight in pairs(groups) do
+		print(group)
+		print(highlight)
 		set(0, group, highlight)
 	end
 end
