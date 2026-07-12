@@ -4,9 +4,9 @@ function M.set(palette)
 	local set = vim.api.nvim_set_hl
 
 	local groups = {
-		Conceal = { fg = palette.gray2 },
+		Conceal = { fg = palette.gray3 },
 		CurSearch = { link = "Cursor" },
-		Search = { fg = palette.bg, bg = palette.gray3 },
+		Search = { fg = palette.bg, bg = palette.gray2 },
 		IncSearch = { link = "Cursor" },
 		Substitute = { link = "Search" },
 		Cursor = { fg = palette.bg, bg = palette.fg },
@@ -30,13 +30,13 @@ function M.set(palette)
 		PmenuBorder = { link = "WinSeperator" },
 		StatusLine = { link = "Normal" },
 		StatusLineTerm = { link = "StatusLine" },
-		Visual = { bg = palette.gray2 },
-		Whitespace = { fg = palette.gray4 },
+		Visual = { bg = palette.gray1 },
+		Whitespace = { link = "Conceal" },
 
 		Comment = { link = "Whitespace" },
-		String = {},
+		String = { fg = palette.lyellow },
 		Identifier = { fg = palette.fg },
-		Function = { fg = palette.gray6 },
+		Function = { fg = palette.gray4 }, -- this is a comment
 		Statement = { fg = palette.lblue },
 	}
 
