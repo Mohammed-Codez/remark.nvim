@@ -34,10 +34,14 @@ function M.set(palette)
 		Whitespace = { link = "Conceal" },
 
 		Comment = { link = "Whitespace" },
+		Constant = { fg = palette.lyellow },
 		String = { fg = palette.lyellow },
 		Identifier = { fg = palette.fg },
 		Function = { fg = palette.gray4 }, -- this is a comment
 		Statement = { fg = palette.lblue },
+		PreProc = { link = "Statement" },
+		Type = { link = "Statement" },
+		Special = { fg = palette.green },
 	}
 
 	for group, highlight in pairs(groups) do
