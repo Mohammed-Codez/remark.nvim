@@ -16,7 +16,7 @@ local palette = {
 	green = "#849070",
 	lgreen = "#98b090",
 	yellow = "#c8b880",
-	lyellow = "#e0c890",
+	lyellow = "#e0d090",
 	blue = "#6880a0",
 	lblue = "#7490c0",
 }
