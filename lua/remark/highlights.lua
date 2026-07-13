@@ -36,12 +36,20 @@ function M.set(palette)
 		Comment = { link = "Whitespace" },
 		Constant = { fg = palette.lyellow },
 		String = { fg = palette.lyellow },
+		Boolean = { link = "Statement" },
 		Identifier = { fg = palette.fg },
-		Function = { fg = palette.gray4 }, -- this is a comment
+		Function = { fg = palette.gray5 }, -- this is a comment
 		Statement = { fg = palette.lblue },
+		Operator = { fg = palette.gray6 },
 		PreProc = { link = "Statement" },
 		Type = { link = "Statement" },
-		Special = { fg = palette.green },
+		Special = { link = "Operator" },
+		SpecialChar = { fg = palette.yellow },
+		Tag = { link = "Function" },
+		Todo = { fg = palette.lyellow, bold = true },
+		Added = { fg = palette.fg },
+		Changed = { fg = palette.gray4 },
+		Removed = { fg = palette.fg },
 	}
 
 	for group, highlight in pairs(groups) do
