@@ -35,7 +35,7 @@ function M.set(palette)
 
 		Comment = { link = "Whitespace" },
 		Constant = { fg = palette.lyellow },
-		String = { fg = palette.lyellow },
+		String = { fg = palette.yellow },
 		Boolean = { link = "Statement" },
 		Identifier = { fg = palette.gray6 },
 		Function = { fg = palette.gray5 }, -- this is a comment
@@ -44,7 +44,7 @@ function M.set(palette)
 		PreProc = { link = "Statement" },
 		Type = { link = "Statement" },
 		Special = { link = "Operator" },
-		SpecialChar = { fg = palette.yellow },
+		SpecialChar = { fg = palette.lyellow },
 		Tag = { link = "Function" },
 		Todo = { fg = palette.lyellow, bold = true },
 		Added = { fg = palette.fg },
