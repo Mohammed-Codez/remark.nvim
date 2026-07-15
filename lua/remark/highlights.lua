@@ -15,7 +15,7 @@ function M.set(palette)
 		CursorColumn = { link = "CursorLine" },
 		Directory = { fg = palette.gray6 },
 		OkMsg = { fg = palette.fg },
-		WarningMsg = { fg = palette.gray6 },
+		WarningMsg = { fg = palette.gray5 },
 		ErrorMsg = { fg = palette.gray4 },
 		StderrMsg = { link = "ErrorMsg" },
 		WinSeperator = { link = "Normal" },
@@ -34,12 +34,12 @@ function M.set(palette)
 		Whitespace = { link = "Conceal" },
 
 		Comment = { link = "Whitespace" },
-		Constant = { fg = palette.lyellow },
+		Constant = { fg = palette.gray4 },
 		String = { fg = palette.lyellow },
 		Boolean = { link = "Statement" },
 		Identifier = { fg = palette.gray6 },
 		Function = { fg = palette.gray5 }, -- this is a comment
-		Statement = { fg = palette.lblue },
+		Statement = { fg = palette.gray4 },
 		Operator = { fg = palette.fg },
 		PreProc = { link = "Statement" },
 		Type = { link = "Statement" },
@@ -105,6 +105,11 @@ function M.set(palette)
 		DiagnositcSignInfo = { link = "DiagnosticInfo" },
 		DiagnositcSignHint = { link = "DiagnosticHint" },
 		DiagnositcSignOk = { link = "DiagnosticOk" },
+		DiagnositcUnderlineError = { undercurl = true },
+		DiagnositcUnderlineWarn = { undercurl = true },
+		DiagnositcUnderlineInfo = { undercurl = true },
+		DiagnositcUnderlineHint = { undercurl = true },
+		DiagnositcUnderlineOk = { undercurl = true },
 	}
 
 	for group, highlight in pairs(groups) do
