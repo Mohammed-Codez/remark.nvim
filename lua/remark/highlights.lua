@@ -35,7 +35,7 @@ function M.set(palette)
 
 		Comment = { link = "Whitespace" },
 		Constant = { fg = palette.gray4 },
-		String = { fg = palette.lyellow },
+		String = { fg = palette.gray4 },
 		Boolean = { link = "Statement" },
 		Identifier = { fg = palette.gray6 },
 		Function = { fg = palette.gray5 }, -- this is a comment

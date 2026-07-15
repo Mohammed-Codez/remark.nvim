@@ -1,4 +1,5 @@
 local palette = {
+	bgray4 = "#888c90",
 	bgray3 = "#6c6c74",
 	bgray2 = "#4c5058",
 	bgray1 = "#30303c",
