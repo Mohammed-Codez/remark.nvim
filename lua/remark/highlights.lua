@@ -39,7 +39,7 @@ function M.set(palette)
 		Boolean = { link = "Statement" },
 		Identifier = { fg = palette.gray6 },
 		Function = { fg = palette.gray5 }, -- this is a comment
-		Statement = { fg = palette.gray4 },
+		Statement = { fg = palette.blue },
 		Operator = { fg = palette.fg },
 		PreProc = { link = "Statement" },
 		Type = { link = "Statement" },
